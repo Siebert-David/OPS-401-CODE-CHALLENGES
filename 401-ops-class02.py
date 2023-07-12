@@ -35,3 +35,5 @@ def main():
 #call/run fx
 if __name__ == "__main__":
     main()
+
+#refernced python.org & open ai to check why it wanst working.
