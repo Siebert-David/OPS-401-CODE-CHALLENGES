@@ -1,6 +1,12 @@
-1
+#1/usr/bin/python3
 
+# Script Name:                 401-ops-class02.py               
+# Class Name:                  Ops 401d8
+# Author Name:                 David Siebert 
+# Date of latest revision:     11JUL2023
+# Create a Python script that fetches this information using Psutil
 
+#import libraries
 import subprocess
 import time
 from datetime import datetime
@@ -24,5 +30,6 @@ def main():
         print(f"{timestamp} {status} to {ip}")
         time.sleep(2)
 
+#call/run fx
 if __name__ == "__main__":
     main()
