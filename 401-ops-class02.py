@@ -4,7 +4,7 @@
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
 # Date of latest revision:     11JUL2023
-# Create a Python script that fetches this information using Psutil
+# In Python, create an uptime sensor tool that uses ICMP packets to evaluate if hosts on the LAN are up or down.
 
 #import libraries
 import subprocess
