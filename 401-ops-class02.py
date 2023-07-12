@@ -6,6 +6,8 @@
 # Date of latest revision:     11JUL2023
 # In Python, create an uptime sensor tool that uses ICMP packets to evaluate if hosts on the LAN are up or down. Part 1 of 2 
 
+#declare functions
+
 #import libraries
 import subprocess
 import time
