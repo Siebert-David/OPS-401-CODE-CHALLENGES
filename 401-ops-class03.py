@@ -96,7 +96,7 @@ def ping_test():
 
     #eval ping response
     if response == 0:
-            pin_result = up 
+            ping_result = up 
     else:
         ping_result = down 
     print(str(now) + ping_result + " to "  + ip)
@@ -104,29 +104,11 @@ def ping_test():
 #main
 
 # infinite heartbeat loop 
+while True:
+    ping_test()
+    time.sleep(2)
 
+    
 
-# Transmit a single ICMP (ping) packet to a specific IP every two seconds.
-def ping_host(ip):
-    try:
-        output = subprocess.check_output(['ping', '-c', '1', ip])
-        return True
-    except subprocess.CalledProcessError:
-        return False
-
-# Evaluate the response as either success or failure.
-# Assign success or failure to a status variable.
-def main():
-    ip = '8.8.8.8'  # IP address to ping
-    while True:
-        # For every ICMP transmission attempted, print the status variable along with a comprehensive timestamp and destination IP tested.
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
-        status = "Network Active" if ping_host(ip) else "Network Inactive"
-        print(f"{timestamp} {status} to {ip}")
-        time.sleep(2)
-
-#call/run fx
-if __name__ == "__main__":
-    main()
 
 #refernced python.org & open ai to check why it wanst working.
