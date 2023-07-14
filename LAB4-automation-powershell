@@ -1,0 +1,11 @@
+
+#1/usr/bin/powershell 
+
+# Script Name:                 LAB4-automation-powershell              
+# Class Name:                  Ops 401d8
+# Author Name:                 David Siebert 
+# Date of latest revision:     14JUL2023
+# PowerShell script that automates the configuration of the required settings:
+
+1.1.5 (L1)  Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\System" -Name "DisableCMDHistory" -Value "0"
+18.4.3 (L1) Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\Installer" -Name "SecureRepairPolicy" -Value "0"
