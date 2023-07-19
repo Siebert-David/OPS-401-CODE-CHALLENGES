@@ -48,12 +48,12 @@ def decrypt_message():
     print("Your message decrypted: ")
     print(decrypted)
 
-#function to encrypt a file 
+#function to encrypt a file //, copied/adjusted/added steps from encrypt message- open - read-  put in variable- write data to file
 def encrypt_file():
   f = Fernet(key)
   filename = input("Enter Full file path for the file your want to Encrypt: ")
   with open(filename, "rb") as file:
-      #read the file data
+#read the file data
       file_data = file.read()
 
 # encrypt the data
@@ -64,24 +64,39 @@ with open(filename, "wb") as file:
     file.write(encrypted_file)
 
 
-# function to decrypt a file
+# function to decrypt a file-same fx as encryption but reverse
 def_decrypt_file():
     f = Fernet(key)
-    filename = input("Please provide the full filepath for the file you want to decrypt: ")
+    filename = input("Enter Full file-path for the file you want to Decrypt: ")
     with open(filename, "rb") as file:
             file_data = file.read()
         decrypted_data = f.decrypt(file_data)
     with open(filename, "wb") as file:
         file.write(decrypted_data)
         
+# Function
 
-# function to handle the menu for the user
+# function to create the menu for the user \n = new line  (covered in course by marco) add error messaging for catch all 
 def ask_user():
-    mode = input("\nWhat would you like to do? \n Mode 1 - Encrypt a file \n Mode 2 - Decrypt a file \n Mode 3 Encrypt a message
+    mode = input("\nWhat would you like to do? \n Mode 1 - Encrypt a file \n Mode 2 - Decrypt a file \n Mode 3 Encrypt a message n\ Mode 4 Decrypt a message n\n Enter a Number to select: ")
+  if (mode == "1"):
+      encrypt_file():
+      print("File has been Encrypted")
+  elif (mode == "2"):
+      decrypt_file()
+      print("File has been Decrypted")
+  elif (mode == "3"):
+      encrypt_message():
+      print("Message has been Encrypted")
+  elif (mode == "4"):
+      decrypt_message():
+      print("Message has been Decrypted")
+  else:
+      print("chose a valid option")
 
 # main
                  
-# Check to see if key already exists
+# Check to see if key already exists (covered in course by marco)
 key_exists = exists(./key.key) 
 print(key_exists)
 
