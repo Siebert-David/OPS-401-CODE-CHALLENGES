@@ -10,6 +10,7 @@
 #import libraries
 from cryptography.fernet import Fernet
 from os.path import exists
+# or import os/less is more
 
 # declare variables
 y_n = "y"
@@ -94,7 +95,7 @@ def ask_user():
   else:
       print("chose a valid option")
 
-# main
+# Main
                  
 # Check to see if key already exists (covered in course by marco)
 key_exists = exists(./key.key) 
@@ -106,15 +107,14 @@ else:
     write_key()
     key = load_key()
 
-#infinite while loop
+#infinite while loop to call ask_user to continue or terminate/break
 while True: 
     ask_user:()
     y_n = input ("Try again y/n")
     if y_n == *n*:
-        print("have a nice day")
+        print("Thank you for using my service. Operation ending")
         break
                  
-# Generate and write a new key
 
 
                  
