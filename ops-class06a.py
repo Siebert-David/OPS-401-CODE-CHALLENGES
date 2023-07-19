@@ -115,7 +115,9 @@ while True:
         print("Thank you for using my service. Operation ending")
         break
                  
-
+# Resources
+# openai.com
+# Marco Course instruction
 
                  
 
