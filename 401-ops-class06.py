@@ -12,14 +12,12 @@
 #Encrypt a message (mode 3)
 #Decrypt a message (mode 4)
 
-Of course! Here's the Python script with explanations above each line:
 
-```python
-# Encryption of data at rest is a common need in security operations. Today you will begin development
-# of a Python script that encrypts a single file.
+
 
 # Resources
 # PyPi: cryptography 3.1.1
+# openai
 
 
 from cryptography.fernet import Fernet
@@ -128,5 +126,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
+
 
