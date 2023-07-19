@@ -6,6 +6,10 @@
 # Date of latest revision:     19JUL2023
 # In Python create a script that utilizes OS.WALK to crawl the tree hierarchy.
 
+#root: Prints out directories only from what you specified
+#dirs: Prints out sub-directories from root
+#files: Prints out all files from root and directories
+
 #import libraries 
 import os 
 
