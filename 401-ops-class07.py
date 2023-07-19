@@ -94,4 +94,4 @@ encrypt_folder(folder_path, key)
 #https://www.pythoncentral.io/recursive-file-and-directory-manipulation-in-python-part-1/
 #https://appdividend.com/2020/01/20/python-list-of-files-in-directory-and-subdirectories/
 #https://github.com/Siebert-David/OPS-401-CODE-CHALLENGES/blob/main/401-ops-class07prepOS.walk.py
-#open.ai.com
+#open.ai.com (how to stage/combine the encyrpt/decrypt with OS.walk)
