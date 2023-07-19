@@ -14,7 +14,7 @@ def load_key():
 
 # Function to encrypt a message
 def encrypt_message():
-    user_message = input("What message would you like to encrypt? ")
+    user_message = input("What message would you like to Encrypt? ")
     encrypted_message = user_message.encode()
     f = Fernet(key)
     encrypted = f.encrypt(encrypted_message)
@@ -23,7 +23,7 @@ def encrypt_message():
 
 # Function to decrypt a message
 def decrypt_message():
-    user_message = input("What message would you like to decrypt? ")
+    user_message = input("What message would you like to Decrypt? ")
     decrypted_message = str.encode(user_message)
     f = Fernet(key)
     decrypted = f.decrypt(decrypted_message)
