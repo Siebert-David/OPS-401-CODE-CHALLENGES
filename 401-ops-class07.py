@@ -3,17 +3,17 @@
 # Script Name:                 401-ops-class07.py               
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
-# Date of latest revision:     18JUL2023
+# Date of latest revision:     19JUL2023
 # In Python create a script that utilizes OS.WALK to crawl the tree hierarchy.
 
 #import libraries 
 import os 
 
-# begin to recurisvely crawl directory 
+# begin to recurisevly crawl directory topdown=false == bottom to top. topdown=True == top to bottom
 for root, dirs, files in os.walk(".", topdown=True):
-# up one level
+# up directory one level (below)
 #for root, dirs, files in os.walk("../", topdown=True):  
-  # hits, concatenate the current directory path to the left of the result
+  # hits, concatenates the current directory path to the left of the result
   for file in files:
       print(os.path.join(root,file))
   for dir in dirs:
