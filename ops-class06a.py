@@ -4,7 +4,7 @@
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
 # Date of latest revision:     18JUL2023
-# In Python, In Python, create a script that utilizes the cryptography library to:
+# In Python, create a script that utilizes the cryptography library to encrypts a single file with a menu.
 
 
 
@@ -60,6 +60,7 @@ def ask_user():
     mode = input("\nWhat would you like to do? \n Mode 1 - Encrypt a file \n Mode 2 - Decrypt a file \n Mode 3 Encrypt a message
 
 # main
+                 
 # Check to see if key already exists
 key_exists = exists(./key.key) 
 print(key_exists)
