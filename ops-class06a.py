@@ -32,6 +32,7 @@ def encrypt_message():
     encrypted_message = user_message.encode()
     f = Fernet(key)
 
+  
 # function to encrypt the message 
     encrypted = f.encrypt(encrypted_message)
     print("your message encrypted: ")
@@ -41,7 +42,19 @@ def encrypt_message():
 def decrypt_message():
     user_message = input("What message would you like to decrypt? ")
     decrypted_message = str.encode(user_message)
+#same as previous 
+    f = Fernet(key)
+    decrypted = f.decrypt(decrypted_message)
+    print("Your message decrypted: ")
+    print(decrypted)
 
+#function to encrypt a file 
+def encrypt_file():
+  f = Fernet(key)
+  filename = input("Enter Full file path for the file your want to Encrypt: ")
+  with open(filename, "rb") as file:
+      #read the file data
+      file_data = file.read()
 
 # encrypt the data
 encrypted_file = f.encrypt(file_data)
