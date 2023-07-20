@@ -1,4 +1,4 @@
-#1/usr/bin/python3
+#!/usr/bin/python3
 
 # Script Name:                 401-ops-class07.py               
 # Class Name:                  Ops 401d8
