@@ -27,13 +27,14 @@ response = sr1(IP(dst=host)/TCP(sport=scr_port,dport=dst_port,flags="S"),timeout
 
 #Verify that data is TCP packet
 if (response.haslayer(TCP)):
-  if (response.getlayer(TCP).flags == 0x12):
+  if (response.getlayer(TCP).flags == 0x12): # SYN-ACK
     send_rst = sr1(IP(dst=host)/TCP(sport=scr_port,dport=dst_port,flags="R"),timeout=1, verbose=0)
     print(f"{host}:{dst_port} is open")
     print(host + str(dst_port) + "is open")
 else:
   print("Unresponsive Host") 
 # 0x14 + notify User
-elif  
-
+else:
+  print(f"Port {port} has an unknown response.") # capture all others add port 
+    
 # no flag received
