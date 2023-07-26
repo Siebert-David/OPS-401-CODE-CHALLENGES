@@ -93,6 +93,7 @@ else:
 # Raphael Chookagain on alt IP request
 # https://wiki.sans.blue/Tools/pdfs/ScapyCheatSheet_v0.2.pdf
 # https://stackoverflow.com/questions/26174743/making-a-fast-port-scanner
+# https://github.com/SwathiPrathaa/TCP-Port-Scan-over-ICMP-Ping-Sweep/blob/main/main.py
 # https://stackoverflow.com/questions/68111001/scapy-port-scanner-with-cidr-ip-range-or-single-ip-domain-input
 # open.AI menu set up recommendations, scapy command quick searches
 # https://stackoverflow.com/questions/66648167/how-to-create-menu-in-python-with-multiple-if-statements
