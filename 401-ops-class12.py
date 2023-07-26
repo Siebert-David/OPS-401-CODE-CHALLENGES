@@ -6,6 +6,8 @@
 # Date of latest revision:     26JUL2023
 # In Python, create a ICMP ping sweep & TCP Port Range Scanner that tests whether a TCP port is open or closed.
 
+# havtn run yet so im sure there is a bug in here... for the life of me vscode has something against me. 
+
 #import Libraries
 #import ipaddress ( to provide subnet lists ) 
 #scapy 
