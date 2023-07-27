@@ -48,3 +48,15 @@ while True:
     if ping_sweep(target_ip):
         # TCP port scan if the host is responsive to ICMP echo requests
         tcp_port_scan(target_ip)
+
+# references
+# 401-ops-class12.py & 401-ops-class11.py
+# Marco set up most(if not all) of the script in class demo
+# Raphael Chookagain on alt IP request
+# https://wiki.sans.blue/Tools/pdfs/ScapyCheatSheet_v0.2.pdf
+# https://stackoverflow.com/questions/26174743/making-a-fast-port-scanner
+# https://github.com/SwathiPrathaa/TCP-Port-Scan-over-ICMP-Ping-Sweep/blob/main/main.py
+# https://stackoverflow.com/questions/68111001/scapy-port-scanner-with-cidr-ip-range-or-single-ip-domain-input
+# open.AI menu set up recommendations, scapy command quick searches
+# https://stackoverflow.com/questions/66648167/how-to-create-menu-in-python-with-multiple-if-statements
+# PY3 continue/break/pass as introduced by marco https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3
