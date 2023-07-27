@@ -7,8 +7,9 @@
 # In Python, create an ICMP ping sweep & TCP Port Range Scanner that tests whether a TCP port is open or closed.
 
 #import Libraries
+import scapy.all import ICMP, IP, sr1, TCP
 from ipaddress import IPv4Network
-from scapy.all as scapy import ICMP, IP, sr1, TCP
+
 
 # Fx for TCP port Scanning
 def tcp_port_scan(host):
