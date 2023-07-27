@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-# Script Name:                 401-ops-class12.py               
+# Script Name:                 401-ops-class13.py               
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
-# Date of latest revision:     26JUL2023
+# Date of latest revision:     27JUL2023
 # In Python, create an ICMP ping sweep & TCP Port Range Scanner that tests whether a TCP port is open or closed.
 
 #import Libraries
