@@ -7,6 +7,7 @@
 # Automated Brute Force Wordlist Attack Tool Part 1 of 3. 
 
 # Define Variables 
+import time
 
 # Import Libraries
 
@@ -31,13 +32,30 @@ def iterator():
     time.sleep(1)
 
 # Move to next line in password list
-    line = file.readline() #ogets next line- must be in wile loop > next line 
+    line = file.readline() #gets next line- must be in while loop > next line 
   file.close()
   
 # add menu
 
-# verify list import 
 
+def main():
+    # Prompt user to select a mode
+    print("Select a mode:")
+    print("1. Offensive; Dictionary Iterator")
+    print("2. Defensive; Password Recognized")
+    
+
+    # Get user input for the selected mode
+    mode = input("Enter mode (1/2): ")
+
+    if mode not in ["1", "2"]:
+        print("Invalid mode selection.")
+        return
+
+   
+
+if __name__ == "__main__":
+    main()
 
 # references
 # MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
