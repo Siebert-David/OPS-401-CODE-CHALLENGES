@@ -4,7 +4,7 @@
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
 # Date of latest revision:     01AUG2023
-#Part 1 of 3 
+# Automated Brute Force Wordlist Attack Tool Part 1 of 3. 
 
 # Define Variables 
 
@@ -34,8 +34,11 @@ def iterator():
     line = file.readline() #ogets next line- must be in wile loop > next line 
   file.close()
   
-  
-  
-#references
-#MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
-#
+# add menu
+
+# verify list import 
+
+
+# references
+# MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
+# https://stackoverflow.com/questions/36969248/how-use-line-rstrip-in-python
