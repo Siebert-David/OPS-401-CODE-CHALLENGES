@@ -4,7 +4,11 @@
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
 # Date of latest revision:     01AUG2023
-#PArt 1 of 3 
+#Part 1 of 3 
+
+# Define Variables 
+
+# Import Libraries
 
 
 def iterator(): 
@@ -27,8 +31,11 @@ def iterator():
     time.sleep(1)
 
 # Move to next line in password list
-    line = file.readline() #overwrite value  gets next line 
+    line = file.readline() #ogets next line- must be in wile loop > next line 
   file.close()
   
   
   
+#references
+#MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
+#
