@@ -20,7 +20,15 @@ def iterator():
   
   # while loop for password list
   while line:
+    line = line.rstrip() #removes empty spaces
+    word = line #line variable - into word
+    print(word)
+    print(line)
+    time.sleep(1)
+
+# Move to next line in password list
+    line = file.readline() #overwrite value  gets next line 
+  file.close()
   
-  print(line)
   
   
