@@ -80,6 +80,20 @@ print("1. TCP Port Range Scanner")
 print("2. ICMP Ping Sweep")
 choice = int(input("Enter 1 or 2: "))
 
+<<<<<<< HEAD
+if choice == 1:
+    tcp_port_scan()
+    print(f"{host_count} hosts have open ports.")
+elif choice == 2:
+    ping_sweep()
+    print(f"{host_count} hosts are online.")
+else:
+    print("Pay attention and Choose 1 or 2.")
+
+
+#references
+# Marco set up most(if not all) of the script in class demo
+=======
 if choice == 1:
     tcp_port_scan()
     print(f"{host_count} hosts have open ports.")
@@ -92,11 +106,21 @@ else:
 
 # references
 # Marco set up most(if not all) of the script in class demo
+>>>>>>> 078e243fb18f853e0661743560748aadd69920d3
 # Raphael Chookagain on alt IP request
 # https://wiki.sans.blue/Tools/pdfs/ScapyCheatSheet_v0.2.pdf
+<<<<<<< HEAD
+# https://stackoverflow.com/questions/26174743/making-a-fast-port-scanner
+# https://stackoverflow.com/questions/68111001/scapy-port-scanner-with-cidr-ip-range-or-single-ip-domain-input
+# open.AI menu set up recommendations, scapy command quick searches
+# https://stackoverflow.com/questions/66648167/how-to-create-menu-in-python-with-multiple-if-statements
+# PY3 continue/break/pass as introduced by marco https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3
+=======
 # https://stackoverflow.com/questions/26174743/making-a-fast-port-scanner
 # https://github.com/SwathiPrathaa/TCP-Port-Scan-over-ICMP-Ping-Sweep/blob/main/main.py
 # https://stackoverflow.com/questions/68111001/scapy-port-scanner-with-cidr-ip-range-or-single-ip-domain-input
 # open.AI menu set up recommendations, scapy command quick searches
 # https://stackoverflow.com/questions/66648167/how-to-create-menu-in-python-with-multiple-if-statements
 # PY3 continue/break/pass as introduced by marco https://www.digitalocean.com/community/tutorials/how-to-use-break-continue-and-pass-statements-when-working-with-loops-in-python-3
+
+>>>>>>> 078e243fb18f853e0661743560748aadd69920d3
