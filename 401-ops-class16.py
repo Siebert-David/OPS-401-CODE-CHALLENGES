@@ -15,7 +15,7 @@
 
 # Import Libraries
 import time 
-import getpass
+from getpass import getpass
 
 
 #Declare functions 
@@ -35,7 +35,7 @@ def iterator():
   # while loop for password list
   while line:
     line = line.rstrip() #removes empty spaces
-    word = line #line variable - into word
+    #word = line #line variable - into word
     print(word)
     print(line)
     time.sleep(1)
@@ -43,14 +43,60 @@ def iterator():
 # Move to next line in password list
     line = file.readline() #gets next line- must be in while loop > next line 
   file.close()
-  
+
+
+# funtion to check passwords againt the word list 
+def check_password():
+    user_password = getpass("Enter your password to verify: ")
+    user_wordlist = input("please enter the complete filepath to the wordlist: ")
+
+    print(f"checking password again the words in '{user_wordlist}' please wait")
+
+    file = open(user_worldlist, 'r')  
+    line = file.readline()
+    wordlist = []  #[] multiple values 
+
+    #while loop
+    while line:
+       line =line.rstrip()
+       worldlist.append(line)     # append TY MARCO adds to wordlist variable 
+       line = file.readline()
+    file.close()
+
+# checking password against wordlist 
+    if user_password not in wordlist:
+       print('Password is accepted')
+       strenth = True
+    elif user_password in worlist:
+       print('Password is too Average')
+       strength = False
+
+       while strenth is False:
+          new_password = getpass("input a stronger password: ")
+          if new_password is in wordlist:
+             print("Your password is too common")
+          elif new_password not in wordlist:
+             print("Password not acceptable ")
+             strenth = True    #breaks out of this reset password loop
+
 # add menu ( finish the menu *********)
-def main():
-    # Prompt user to select a mode
-    print("Select a mode:")
-    print("1. Offensive; Dictionary Iterator")
-    print("2. Defensive; Password Recognized")
-    
+def user_menu():
+    while True:
+       mode = input("""
+Brute FORCE Worldlist Attack Tool Menu
+1 - Offensive Dictionary Iterator
+2 - Defensive Password Recognised
+3 - Exit
+    Please enter a number:
+"""
+                    )
+
+
+
+#    Prompt user to select a mode
+#      print("Select a mode:")
+#      print("1. Offensive; Dictionary Iterator")
+#      print("2. Defensive; Password Recognized")    
 
    
 
@@ -63,9 +109,10 @@ def main():
 
     #main
 iterator()
-
+check_password
 
 # references
 # MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
 # rstrip https://stackoverflow.com/questions/36969248/how-use-line-rstrip-in-python
 # readline https://www.w3schools.com/python/ref_file_readline.asp
+# append https://www.w3schools.com/python/ref_list_append.asp
