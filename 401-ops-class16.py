@@ -8,6 +8,10 @@
 
 # Define Variables 
 import time
+# need to finish
+#  password list to import
+#  menu for function 
+
 
 # Import Libraries
 
@@ -54,8 +58,8 @@ def main():
 
    
 
-if __name__ == "__main__":
-    main()
+
+    main
 
 # references
 # MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
