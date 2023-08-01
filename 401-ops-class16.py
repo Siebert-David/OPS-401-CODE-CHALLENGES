@@ -8,8 +8,10 @@
 
 # Define Variables 
 import time
-# need to finish
-#  password list to import
+
+
+# need to finish these below **************
+#  password list to reference 
 #  menu for function 
 
 
@@ -39,9 +41,7 @@ def iterator():
     line = file.readline() #gets next line- must be in while loop > next line 
   file.close()
   
-# add menu
-
-
+# add menu ( finish the menu *********8)
 def main():
     # Prompt user to select a mode
     print("Select a mode:")
@@ -49,8 +49,7 @@ def main():
     print("2. Defensive; Password Recognized")
     
 
-    # Get user input for the selected mode
-    mode = input("Enter mode (1/2): ")
+   
 
     if mode not in ["1", "2"]:
         print("Invalid mode selection.")
