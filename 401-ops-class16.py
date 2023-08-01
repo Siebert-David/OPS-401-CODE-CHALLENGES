@@ -6,18 +6,21 @@
 # Date of latest revision:     01AUG2023
 # Automated Brute Force Wordlist Attack Tool Part 1 of 3. 
 
-# Define Variables 
-import time
 
 
 # need to finish these below **************
-#  password list to reference 
+#  password list to reference rockyou-shortened
 #  menu for function 
 
 
 # Import Libraries
+import time 
+import getpass
 
 
+#Declare functions 
+
+#funtion to iterate over word list file 
 def iterator(): 
   # ask for filepath to the wordlist to utilize
   filepath = input("Enter the Complete Filepath for the Wordlist: ")
@@ -41,7 +44,7 @@ def iterator():
     line = file.readline() #gets next line- must be in while loop > next line 
   file.close()
   
-# add menu ( finish the menu *********8)
+# add menu ( finish the menu *********)
 def main():
     # Prompt user to select a mode
     print("Select a mode:")
@@ -58,8 +61,11 @@ def main():
    
 
 
-    main
+    #main
+iterator()
+
 
 # references
 # MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
-# https://stackoverflow.com/questions/36969248/how-use-line-rstrip-in-python
+# rstrip https://stackoverflow.com/questions/36969248/how-use-line-rstrip-in-python
+# readline https://www.w3schools.com/python/ref_file_readline.asp
