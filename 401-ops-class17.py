@@ -19,9 +19,9 @@ import import time
 from getpass import getpass
 
 #Define variables
-host - input ("Please provide the IP address you want to SSH to: °)
-user = input ("Please provide a username:
-password = getpass ("Please provide your password:
+host - input("Please provide the IP address you want to SSH to: °)
+user = input("Please provide a username:
+password = getpass("Please provide your password:
 port = 22
 
 # Create an object that handles the SSH connection
@@ -55,6 +55,6 @@ ssh.close()
 
 # references
 # MARCO VAZQUEZ - As always an excellent/indepth & informative overview with clear instruction on -why- the while loop & -why- the line = file.readline() must be in that loop
-# rstrip https://stackoverflow.com/questions/36969248/how-use-line-rstrip-in-python
+# https://docs.paramiko.org/en/latest/api/agent.html
 # readline https://www.w3schools.com/python/ref_file_readline.asp
-# append https://www.w3schools.com/python/ref_list_append.asp
+# https://pythonbasics.org/try-except/
