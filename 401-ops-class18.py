@@ -10,4 +10,9 @@
 from zipfile import ZipFile
 from getpass import getpass
 
-zip_file = input 
+zip_file = input("PRovide Full filepath for zip file: ")
+password = getpass("Provide the Password: ")
+
+#Attempt to open the zip file with provided password. 
+with ZipFile(zip_file) as zf:
+    zf.extractall(pwd=bytes(password,'utf-8'))
