@@ -6,12 +6,13 @@
 # Date of latest revision:     02AUG2023
 # Automated Brute Force Wordlist Attack Tool Part 2 of 3. 
 
+
 # import libraries 
 from zipfile import ZipFile
 from getpass import getpass
 import time
 
-
+----------------------------------------------------------
 zip_file = input("PRovide Full filepath for zip file: ")
 password = getpass("Provide the Password: ")
 
