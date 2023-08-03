@@ -42,7 +42,7 @@ def crack_file():
 
             try:
                 with ZipFile(the_file) as zf:
-                    zf.extractall(pwd=bytes(password), 'utf-8')
+                    zf.extractall(pwd=bytes(password, 'utf-8'))
                 success = "yes" #breaks out of while loop
                 print(f"[*] File opened with '{password}' - retunring to menu. [*]")
                 break
@@ -53,4 +53,5 @@ def crack_file():
             time.sleep(.5)
             line = file.readline()
         file.close()
-        
+
+#chmod +x 401-ops-class18.py
