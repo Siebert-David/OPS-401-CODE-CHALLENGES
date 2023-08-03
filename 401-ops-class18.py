@@ -19,7 +19,7 @@ password = getpass("Provide the Password: ")
 with ZipFile(zip_file) as zf:
     zf.extractall(pwd=bytes(password,'utf-8'))
 
-
+---------------------------------------------------------------
 
 #declare functions ( from Marco inclass review) 
 def crack_file():
