@@ -12,7 +12,7 @@ import logging
 import os 
 
 
-# confiogure the basic of the logger , formatting messages 
+# confiogure the basic of the logger , formatting messages filemode write
 logging.basicConfig(filemane="demo.log", format='%(asvtime)s %(message)s', filemode='w')
 
 #creating log onbject
