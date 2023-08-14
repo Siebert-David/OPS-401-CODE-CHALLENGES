@@ -8,6 +8,27 @@
 
 
 # import libraries 
-import loggin 
+import logging 
+import os 
 
-log = logging.getlogger(
+
+# confiogure the basic of the logger , formatting messages 
+logging.basicConfig(filemane="demo.log", format='%(asvtime)s %(message)s', filemode='w')
+
+#creating log onbject
+log = logging.getlogger("my_logger")
+ 
+#setting the level of message to log
+log.setLEvel(logging.WARNING)
+
+#generate a set of test log messages
+log.debug("Harmless Debug ")
+log.info("An Information Message")
+log.warning("A WARNING")
+log.error("AN ERROR")
+log.critical("Worst Case Scenario")
+
+def do_things():
+    log.debug("doing things")
+
+do_things():
