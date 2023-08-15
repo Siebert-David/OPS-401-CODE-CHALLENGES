@@ -13,13 +13,13 @@ import os
 
 
 # confiogure the basic of the logger , formatting messages filemode write
-logging.basicConfig(filemane="demo.log", format='%(asvtime)s %(message)s', filemode='w')
+logging.basicConfig(filename="demo.log", format='%(asctime)s %(message)s', filemode='w')
 
 #creating log onbject
-log = logging.getlogger("my_logger")
+log = logging.getLogger("my_logger")
  
 #setting the level of message to log
-log.setLEvel(logging.WARNING)
+log.setLevel(logging.WARNING)
 
 #generate a set of test log messages
 log.debug("Harmless Debug ")
