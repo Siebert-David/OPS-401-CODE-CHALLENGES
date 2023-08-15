@@ -29,7 +29,7 @@ log.error("AN ERROR")
 log.critical("Worst Case Scenario")
 
 # Create the handler
-handler = RotatingFileHandler('mylogs.log', maxBytes= 20, backupCount=3)
+handler = TimedRotatingFileHandler('mylogs.log', interval= 00%, backupCount=3)
 
 #tell PY to use the two together ( use the handler ) 
 logger.addHandler(handler)
