@@ -1,0 +1,55 @@
+#!/usr/bin/python3
+
+# Script Name:                 401-ops-class26.py               
+# Class Name:                  Ops 401d8
+# Author Name:                 David Siebert 
+# Date of latest revision:     14AUG2023
+# Event logging tool Part 1 of 3. os walk and logging 
+
+import os
+import logging
+
+# Configure the basic logger, formatting messages, file mode write
+logging.basicConfig(filename="demo.log", format='%(asctime)s %(message)s', filemode='w')
+
+# Creating log object
+log = logging.getLogger("my_logger")
+
+# Setting the level of message to log
+log.setLevel(logging.WARNING)
+
+# Function to recursively crawl directories and process files
+def crawl_and_process(folder_path):
+    for root, dirs, files in os.walk(folder_path, topdown=True):
+        for file in files:
+            log.debug(f"Processing file: {file} in {root}")
+            print(os.path.join(root, file))
+        for dir in dirs:
+            log.debug(f"Processing directory: {dir} in {root}")
+            print(os.path.join(root, dir))
+
+def main():
+    # Generate a set of test log messages
+    log.debug("Harmless Debug")
+    log.info("An Information Message")
+    log.warning("A WARNING")
+    log.error("AN ERROR")
+    log.critical("Worst Case Scenario")
+
+    folder_path = input("Enter the path of the folder to crawl and process: ")
+    crawl_and_process(folder_path)
+
+    def do_things():
+        log.debug("doing things")
+
+    do_things()
+
+if __name__ == "__main__":
+    main()
+
+
+#references: 
+#marco in class demo 
+#https://docs.python.org/3/howto/logging.html#a-simple-example
+#https://docs.python.org/3/howto/logging.html#basic-logging-tutorial
+#https://docs.python.org/3/howto/logging-cookbook.html#sending-logging-messages-to-email-with-buffering save for final project 
