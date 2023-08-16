@@ -33,6 +33,7 @@ file_handler.setFormatter(file_format)
 logger.addHandler(terminal_handler)
 logger.addHandler(file_handler)
 
+logger.critical("Server Fire")
 logger.warning("Warning Message")
 logger.error("Error Message")
 
