@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Script Name:                 401-ops-class26-7-oswalkencrypt-logging.py              
+# Script Name:                 ops-28.py              
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
 # Date of latest revision:     16AUG2023
