@@ -38,3 +38,9 @@ logger.addHandler(handler)
 while True:
   time.sleep(1)
   logger.info("insert ative message here")
+
+
+
+#references 
+# https://www.blog.pythonlibrary.org/2014/02/11/python-how-to-create-rotating-logs/
+# MArco in class demo 
