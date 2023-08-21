@@ -6,4 +6,26 @@
 # Date of latest revision:     21AUG2023
 # Part 1 of 3
 
+# import libraries 
+import os
+from time import sleep
+import platform
 
+#declare variables 
+my_os = platform.system()
+
+print(my_os)
+
+#define functions 
+def linux_search():
+
+
+
+
+#main 
+if my_os == "Linux":
+    linux-search()
+elif my_os == "Windows":
+    windows_serach()
+else:
+    print(" the OS is compatatbile with script ")
