@@ -50,7 +50,7 @@ def windowsSearch():
     # count number of files found and store as variable 
     foundCount = os.system("dir /b/s " + str(directory) + str(whichFile) + " | find /c \":\\\"").read()
                            
-      print("files found " + foundCount)
+    print("files found " + foundCount)
 
 
 
