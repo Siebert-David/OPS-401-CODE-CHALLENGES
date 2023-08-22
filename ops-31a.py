@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-# Script Name:                 401-ops-class31.py               
+# Script Name:                 401-ops-class31a.py               
 # Class Name:                  Ops 401d8
 # Author Name:                 David Siebert 
-# Date of latest revision:     21AUG2023
-# Part 2 of 3
+# Date of latest revision:     22AUG2023
+# Part 1 of 3
 
 
 
@@ -23,4 +23,9 @@ def linuxSearch():
 
     #count and print the number of files searched
     os.system("ls " + str(directory) + " | echo \"searched $(wc -l) files.\"")
-    
+
+#search for windows 
+
+
+
+#main
