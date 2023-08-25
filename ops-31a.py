@@ -53,7 +53,6 @@ def windowsSearch():
     print("files found " + foundCount)
 
 
-
     #main
 
 linuxSearch()
