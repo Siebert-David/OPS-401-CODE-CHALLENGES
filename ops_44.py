@@ -37,3 +37,7 @@ def portScanner(portno):
         print("Port closed")
 
 portScanner(portno)
+
+
+#references 
+#openai.com
