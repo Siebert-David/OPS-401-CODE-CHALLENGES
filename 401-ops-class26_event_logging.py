@@ -65,3 +65,9 @@ while True:
         tcp_port_scan(target_ip)
 
 log.info("Script execution completed.")
+
+#References_Resources 
+#https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
+#https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
+#https://dotnettutorials.net/lesson/logging-module-in-python/
+#openai chat gpt
